@@ -15,7 +15,7 @@ app.listen(port, () => {
 app.get('/aleks', (req, res) => {
     let arr = [10, 2, 1, 5];
     let result = 0;
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length-2; i++) {
         result = (arr[i] + arr[i+1]) - (arr[i+1] + arr[i+2]);
         console.log(result);
     }
