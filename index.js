@@ -13,5 +13,11 @@ app.listen(port, () => {
 })
 
 app.get('/aleks', (req, res) => {
-    res.send("aleks")
+    let arr = [10, 2, 1, 5];
+    let result = 0;
+    for (let i = 0; i < arr.length; i++) {
+        result = (arr[i] + arr[i+1]) - (arr[i+1] + arr[i+2]);
+        console.log(result);
+    }
+    res.send(result);
 })
