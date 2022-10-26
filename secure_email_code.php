@@ -15,8 +15,8 @@ echo "Invalid Sender's Email";
 }
 else{
 $message = $_POST['message'];
-$headers = 'From:'. $email2 . "rn"; // Sender's Email
-$headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
+$headers = 'From:'. $email . "rn"; // Sender's Email
+$headers .= 'Cc:'. $email . "rn"; // Carbon copy to Sender
 // Message lines should not exceed 70 characters (PHP rule), so wrap it
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
