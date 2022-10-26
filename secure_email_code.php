@@ -1,25 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section class="contact-sec">
-        <div class="contact-container">
-        <h1 id="contact">CONTACT</h1>
-        <p class="p-bold">Please fill in the form below to contact me.</p>
-        </div>
-        <form action="#" id="form" method="post" name="form" class="form-1">  
-        <fieldset>
-        <div><input name="vname" class="input-1" type="text" name="name" placeholder="Name:"></div>
-        <div><input name="vemail" class="input-1" type="email" name="email" placeholder="Email:"></div>
-        <div><textarea name="message" class="input-1" rows="3" cols="30" placeholder="Message:"></textarea></div> 
-        <input id="send" name="" type="submit" value="Send Form" />
-        </fieldset>
-        </form>  
-    </section> 
-</body>
-</html>
+<?php
+if(isset($_POST["submit"])){
+// Checking For Blank Fields..
+if($_POST["vname"]==""||$_POST["vemail"]==""||$_POST["message"]==""){
+echo "Fill All Fields..";
+}else{
+// Check if the "Sender's Email" input field is filled out
+$email=$_POST['vemail'];
+// Sanitize E-mail Address
+$email =filter_var($email, FILTER_SANITIZE_EMAIL);
+// Validate E-mail Address
+$email= filter_var($email, FILTER_VALIDATE_EMAIL);
+if (!$email){
+echo "Invalid Sender's Email";
+}
+else{
+$message = $_POST['message'];
+$headers = 'From:'. $email2 . "rn"; // Sender's Email
+$headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
+// Message lines should not exceed 70 characters (PHP rule), so wrap it
+$message = wordwrap($message, 70);
+// Send Mail By PHP Mail Function
+mail("oceboosting@gmail.com", $subject, $message, $headers);
+echo "Your mail has been sent successfuly ! Thank you for your feedback";
+}
+}
+}
+?>
