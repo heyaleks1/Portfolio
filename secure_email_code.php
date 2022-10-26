@@ -1,5 +1,5 @@
 <?php
-if(asset($_POST["submit"])){
+if(isset($_POST["submit"])){
 // Checking For Blank Fields..
 if($_POST["name"]==""||$_POST["email"]==""||$_POST["message"]==""){
 echo "Fill All Fields..";
