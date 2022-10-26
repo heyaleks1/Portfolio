@@ -24,18 +24,24 @@
             }
         }
     ?>
-<form method="post" name="form" class="form-1">  
+
+<div class="contact-container">
+    <h1 id="contact">CONTACT</h1>
+    <p class="p-bold">Please fill in the form below to contact me.</p>
+    <form method="post" name="form" class="form-1">  
         <fieldset>
-        <div><input name="name" class="input-1" type="text" placeholder="Name:"></div>
-        <div><input name="email" class="input-1" type="email" placeholder="Email:"></div>
-        <div><textarea name="message" class="input-1" rows="3" cols="30" placeholder="Message:"></textarea></div> 
-        <input id="send" name="" type="submit" value="Send Form" />
-        <?php if(!empty($message)) { ?>
-            <div class="success">
+            <div><input name="name" class="input-1" type="text" placeholder="Name:"></div>
+            <div><input name="email" class="input-1" type="email" placeholder="Email:"></div>
+            <div><textarea name="message" class="input-1" rows="3" cols="30" placeholder="Message:"></textarea></div> 
+            <input id="send" name="" type="submit" value="Send Form" />
+            <?php if(!empty($message)) { ?>
+                <div class="success">
                 <strong><?php echo $message; ?></strong>
-        </div>
-        <?php } ?>
+                </div>
+            <?php } ?>
         </fieldset>
-        </form>  
+    </form>  
+</div>
+
 </body>
 </html>
