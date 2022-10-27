@@ -1,2 +1,4 @@
 node_modules/
 secure_email_code/
+composer.json/
+composer.lock/
