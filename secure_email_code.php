@@ -9,7 +9,7 @@
         $mail->IsSMTP();                                      // Set mailer to use SMTP
         $mail->Host = "smtp.gmail.com";  // Specify main and backup server
         $mail->SMTPAuth = true;     // Turn on SMTP authentication
-        $mail->Username = "oceboosting";  // SMTP username
+        $mail->Username = "oceboosting@gmail.com";  // SMTP username
         $mail->Password = "qjpsyiutamkwdjae"; // SMTP password
         $mail->Port = 587;
         $mail->From = "oceboosting@gmail.com";
