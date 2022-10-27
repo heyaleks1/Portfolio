@@ -5,13 +5,13 @@ const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 
 app.use(express.static('public'));
-
+app.use("/public", express.static(process.cwd() + "/public")); //make public static
 app.listen(port, () => {
     console.log('Listening on port 3000')
 })
 
 app.route('/').get((req, res) => {
-    res.sendFile(process.cwd() + "/index.html")
+    res.sendFile(process.cwd() + "/public/index.html")
 })
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
