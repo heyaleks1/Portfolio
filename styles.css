@@ -187,8 +187,7 @@ button {
     height: 2em;
     font-size: 1.1rem;
     min-width: 300px;
-    color: var(--main-color1);
-    border-color: var(--main-color2);
+    color: var(--main-color2);
     font-weight: bold;
   }
 
@@ -207,7 +206,9 @@ button {
     text-decoration: none;
 }
 button:hover {
-    background-color: var(--main-color2);
+    background-color: var(--main-color1);
+    color: var(--main-color2);
+    cursor: pointer;
 }
 .l1:hover {
     color: var(--main-color5);
