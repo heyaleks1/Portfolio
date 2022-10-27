@@ -94,7 +94,7 @@ h4 {
     color: var(--main-color1);
 }
 .about-background {
-    background: var(--main-color2);
+    background: var(--main-color4);
     width: 65vw;
     margin: auto; 
     border-radius: 1%; 
@@ -212,7 +212,7 @@ button {
     cursor: pointer;
 }
 .about-button:hover {
-    background-color: var(--main-color5);
+    background-color: var(--main-color2);
     cursor: pointer;
 }
 .about-button:visited {
