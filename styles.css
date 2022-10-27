@@ -15,7 +15,7 @@
     font-family: Montserrat;
 }
 body {
-    background: linear-gradient(var(--main-color2) 50%, var(--main-color3));
+    background: linear-gradient(var(--main-color2) 25%, var(--main-color3));
     box-sizing: border-box;
 }
   header {
