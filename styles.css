@@ -94,7 +94,7 @@ h4 {
     color: var(--main-color1);
 }
 .about-background {
-    background: var(--main-color4);
+    background: var(--main-color2);
     width: 65vw;
     margin: auto; 
     border-radius: 1%; 
