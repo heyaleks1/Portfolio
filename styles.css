@@ -212,7 +212,7 @@ button:hover {
     cursor: pointer;
 }
 .l1:hover {
-    color: var(--main-color5);
+    color: var(--main-color2);
     font-weight: bold;
     cursor: pointer;
 }
