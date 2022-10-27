@@ -58,5 +58,5 @@ transporter.verify(function (error, success) {
   
   //Index page (static HTML)
   app.route("/").get(function (req, res) {
-    res.sendFile(process.cwd() + "/public/index.html");
+    res.sendFile(process.cwd() + "/index.html");
   });
