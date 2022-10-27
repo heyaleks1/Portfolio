@@ -212,7 +212,7 @@ button {
     cursor: pointer;
 }
 .about-button:hover {
-    background-color: var(--main-color2);
+    background-color: var(--main-color5);
     cursor: pointer;
 }
 .about-button:visited {
