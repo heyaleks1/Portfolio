@@ -23,7 +23,7 @@ $mail->Port = 587;
 $mail->Username = "heyaleks22222@gmail.com";
 $mail->Password = "ayzdutcumameulem";
 
-$mail->setFrom($email, $name, " -oceboosting@gmail.com");
+$mail->setFrom($email, $name);
 $mail->addAddress("oceboosting@gmail.com", "Aleks");
 
 $mail->Subject = $name;
