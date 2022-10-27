@@ -22,8 +22,6 @@
         $mail->Subject = $email;
         $mail->Body    = $message;
         $mail->AltBody = "This is the body in plain text for non-HTML mail clients";
-        $mail->AddEmbeddedImage('images/logo.png', 'logo', 'logo.png');
-        $mail->addAttachment('files/file.xlsx');
     
         if(!$mail->Send())
         {
