@@ -1,19 +1,36 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "oceboosting@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $name = $_POST['name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+<?php
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    //echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    header("Location: sent.html");
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?>
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["message"];
+
+require "vendor/autoload.php";
+
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+//Creating a new instance, passing true enables exceptions
+$mail = new PHPMailer(true);
+
+
+//Server settings (gmail)
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+$mail->Host = "smtp.gmail.com";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
+$mail->Username = "heyaleks22222";
+$mail->Password = "389a43c4";
+
+//Recipients
+$mail->setFrom($email, $name);
+$mail->addAddress("oceboosting@gmail.com", "Aleks"); //Add a recipient, name optional
+
+//Content
+$mail->Subject = $name;
+$mail->Body = $message;
+
+$mail->send();
+header("Location: sent.html");
