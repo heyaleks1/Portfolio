@@ -22,7 +22,7 @@ $mail->Username = "oceboosting@gmail.com";
 $mail->Password = "R389a43c4!";
 
 $mail->setFrom($email, $name);
-$mail->addAddress("heyaleks22222", "Aleks");
+$mail->addAddress("heyaleks22222@gmail.com", "Aleks");
 
 $mail->Subject = $name;
 $mail->Body = $message;
