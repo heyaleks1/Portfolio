@@ -33,7 +33,7 @@ nav {
     margin: 0;
     display: inline-flex;  
     justify-content: right; 
-    align-items: left;
+    align-items: center;
     min-width: 350px;
 }
 li {
