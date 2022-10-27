@@ -3,17 +3,13 @@
 $name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
-
 require "vendor/autoload.php";
-
 $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
 //Creating a new instance, passing true enables exceptions
 $mail = new PHPMailer(true);
-
 
 //Server settings (gmail)
 $mail->isSMTP();
