@@ -7,7 +7,7 @@
     
         $mail->CharSet = "utf-8";
         $mail->IsSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = "mail.example.com";  // Specify main and backup server
+        $mail->Host = "smtp.gmail.com";  // Specify main and backup server
         $mail->SMTPAuth = true;     // Turn on SMTP authentication
         $mail->Username = "heyaleks22222";  // SMTP username
         $mail->Password = "389a43c4"; // SMTP password
