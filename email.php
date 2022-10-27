@@ -15,6 +15,7 @@ $mail = new PHPMailer(true);
 
 $mail->isSMTP();
 $mail->SMTPAuth = true;
+$mail->SMTPSecure = 'ssl'; //secure transfer enabled
 
 $mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
