@@ -2,6 +2,7 @@
 
 $name = $_POST["name"];
 $email = $_POST["email"];
+$subject = $_POST["name"];
 $message = $_POST["message"];
 
 require "vendor/autoload.php";
