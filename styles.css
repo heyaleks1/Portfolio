@@ -142,9 +142,9 @@ h4 {
 .experience-title {
     font-weight: bold;
     color: var(--main-color1);
-    background: var(--main-color4);
+    background: var(--main-color1);
     padding: 5em;
-    color: var(--main-color5);
+    color: var(--main-color2);
 }
 .exp-text {
     padding-top: 0.7em;
