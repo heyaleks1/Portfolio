@@ -1,11 +1,19 @@
+require("./env");
 const express = require('express')
 const app = express();
 const port = 3000;
+let mongoose = require("mongoose");
+let validator = require("validator");
+
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 app.use(express.static('public'));
 
 app.listen(port, () => {
-    console.log('Listening on port 3000')
+    console.log('Server is up and running')
 })
 
 app.get('/aleks', (req, res) => {
