@@ -1,5 +1,5 @@
 :root {
-    --main-color1: #edf0f3;
+    --main-color1: black;
     --main-color2: #f9dca7;
     --main-color3: white;
     --main-color4: #E5E5E5;
@@ -58,11 +58,11 @@ h4 {
     margin: 1em auto;
     text-align: center;
     font-size: 115%;
-    color: var(--main-color4);
+    color: var(--main-color1);
 }
 .home-name1 {
     min-width: 350px;
-    color: var(--main-color5);
+    color: var(--main-color1);
 }
 .home-sec {
     height: 100vh;
@@ -142,7 +142,7 @@ h4 {
 .experience-title {
     font-weight: bold;
     color: var(--main-color1);
-    background: var(--main-color1);
+    background: var(--main-color4);
     padding: 5em;
     color: var(--main-color5);
 }
