@@ -180,7 +180,7 @@ h4 {
 .form-1 {
     padding: 1em;
 }
-input[type="submit"] {
+button {
     display: block;
     width: 40%;
     margin: 1em auto;
