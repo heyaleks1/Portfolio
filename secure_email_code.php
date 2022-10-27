@@ -1,28 +1,34 @@
 <?php
-    if(isset($_POST["submit"])){
-// Checking For Blank Fields..
-        if($_POST["name"]==""||$_POST["email"]==""||$_POST["message"]==""){
-            echo "Fill All Fields..";
-        }else{
-        // Check if the "Sender's Email" input field is filled out
-            $email=$_POST['email'];
-            // Sanitize E-mail Address
-            $email=filter_var($email, FILTER_SANITIZE_EMAIL);
-            // Validate E-mail Address
-            $email=filter_var($email, FILTER_VALIDATE_EMAIL);
-    if (!$email){
-        echo "Invalid Sender's Email";
-        }
-    else{
-        $message = $_POST['message'];
-        $headers = 'From:'. $email . "\r\n"; // Sender's Email
-        $headers .= 'Cc:'. $email . "\r\n"; // Carbon copy to Sender
-        // Message lines should not exceed 70 characters (PHP rule), so wrap it
-        $message = wordwrap($message, 70);
-        // Send Mail By PHP Mail Function
-        mail("oceboosting@gmail.com", $subject, $message, $headers);
-        echo "Your mail has been sent successfuly ! Thank you for your feedback";
-    }
-}
-}
-?>
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["message"];
+
+require "vendor/autoload.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+$mail = new PHPMailer(true);
+
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+
+$mail->Host = "smtp.exmaple.com";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
+
+$mail->Username = "oceboosting@gmail.com";
+$mail->Password = "R389a43c4!";
+
+$mail->setFrom($email, $name);
+$mail->addAddress("oceboosting@gmail.com");
+
+$mail->Subject = $name;
+$mail->Body = $message;
+
+$mail->send();
+
+echo "email sent";
+
+
