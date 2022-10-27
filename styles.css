@@ -1,10 +1,8 @@
 :root {
     --main-color1: black;
-    --main-color2: #f9dca7;
+    --main-color2: #529aff;
     --main-color3: white;
-    --main-color4: #E5E5E5;
-    --main-color5: #7c4e2d;
-    --main-color6: #d85a00;
+    --main-color4: white;
 }
   * {
     margin: 0;
