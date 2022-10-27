@@ -69,13 +69,13 @@
             <h1 id="contact">CONTACT</h1>
             <p class="p-bold">Please fill in the form below to contact me.</p>
         </div>
+
         <form method="post" action="aleksmanevskisend.php" id="form" name="form" type="submit" class="form-1">  
-        <fieldset>
-        <div><input name="name" class="input-1" type="text" id="name" placeholder="Name:"></div>
-        <div><input name="email" class="input-1" type="email" id="email" placeholder="Email:"></div>
-        <div><textarea name="message" class="input-1" rows="3" cols="30" id="message" placeholder="Message:"></textarea></div> 
-        <button type="submit" value="submit" >Send Query</button>
-        </fieldset>
+        <input name="name" class="input-1" type="text" id="name" placeholder="Name:" required/>
+        <input name="email" class="input-1" type="email" id="email" placeholder="Email:" required/>
+        <textarea name="message" class="input-1" rows="3" cols="30" type="text" id="message" placeholder="Message:" required></textarea>
+        <button type="submit" id="submit" value="submit" >Send Query</button>
+
         </form>  
     </section>
         <section class="forums"></section>   
