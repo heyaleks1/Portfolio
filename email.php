@@ -1,20 +1,34 @@
 <?php
-if(!empty($_POST["send"])) {
-	$name = $_POST["name"];
-    $email = $_POST["email"];
-	$message = $_POST["message"];
-    $toEmail = "oceboosting@gmail.com";
-  
-	$mailHeaders = "Name: " . $name .
-	"\r\n Email: ". $email  . 
-	"\r\n Message: " . $message . "\r\n";
 
-	if(mail($toEmail, $name, $mailHeaders)) {
-	    $message = "Your contact information is received successfully.";
-	}
-}
-?>
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["message"];
 
-<?php if (! empty($message)) {?>
-    <strong><?php echo $message; ?>	</strong>
-    <?php } ?>
+require "vendor/autoload.php";
+
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+$mail = new PHPMailer(true);
+
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+
+$mail->Host = "smtp.gmail.com";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
+
+$mail->Username = "heyaleks22222@gmail.com";
+$mail->Password = "ayzdutcumameulem";
+
+$mail->setFrom($email, $name);
+$mail->addAddress("oceboosting@gmail.com", "Aleks");
+
+$mail->Subject = $name;
+$mail->Body = $message;
+
+$mail->send();
+
+header("Location: sent.html");
