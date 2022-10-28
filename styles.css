@@ -235,15 +235,11 @@ button:hover {
     }
   }
   @media (max-width: 900px) {
-    .home-name1 {
-        font-size: 22px;
+    li {
+        font-size: 75%;
     }
 }
-@media (max-width: 600px) {
-    .home-name1 {
-        font-size: 15px;
-    }
-}
+
 @media (max-width: 750px) {
     .about-background {
         width: 35vh;
