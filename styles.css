@@ -148,7 +148,7 @@ h4 {
 .contact-sec {
     background: var(--main-color4);
     text-align: center;
-    width: 65vw;
+    width: 85vw;
     height: auto;
     max-width: 850px;
     margin: auto; 
@@ -163,7 +163,7 @@ h4 {
 }
 .input-1 { 
     /*contact section styling*/
-    padding: 1em;
+    padding: 1.5em;
     margin: 1em;
     width: 60%;
     border: 1px solid var(--main-color1);
