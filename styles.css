@@ -29,6 +29,9 @@ body {
 header {
 	background-color: var(--main-color1);
 }
+nav {
+    padding: 10px 0 10px 0;
+}
 
 h1 {
     text-align: center;
@@ -150,7 +153,7 @@ h4 {
     text-align: center;
     width: 85vw;
     height: auto;
-    max-width: 850px;
+    max-width: 650px;
     margin: auto; 
     border-radius: 1%; 
     box-shadow: 10px 10px 5px rgb(148, 148, 148, 0.5), 5px 5px 6px 15px rgb(148, 148, 148, 0.3);
@@ -172,9 +175,14 @@ h4 {
 .form-1 {
     padding: 1em;
 }
+.temp {
+    color:red;
+
+    margin-top: 15px;
+
+}
 button {
     padding: 1em;
-    margin: 1em;
     width: 40%;
     border: 1px solid var(--main-color1);
     border-radius: 1%;
