@@ -34,13 +34,7 @@ nav {
     float: right;
     min-width: 350px;
 }
-li {
-    padding: 12px;
-    font-size: 115%;
-    display: inline-flex;
-    margin: auto;
-    padding: 6px;  
-}
+
 h1 {
     text-align: center;
     width: 100%;
