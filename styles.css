@@ -36,6 +36,7 @@ nav {
     justify-content: right; 
     align-items: left;
     min-width: 350px;
+    position: absolute;
 }
 li {
     padding: 12px;
@@ -58,6 +59,9 @@ h4 {
     text-align: center;
     font-size: 115%;
     color: var(--main-color1);
+}
+.lab1 {
+    text-align: center;
 }
 .home-name1 {
     min-width: 350px;
@@ -180,15 +184,11 @@ h4 {
     padding: 1em;
 }
 button {
-    display: block;
+    padding: 1em;
+    margin: 1em;
     width: 40%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    min-width: 300px;
-    color: var(--main-color1);
-    border: 2px solid var(--main-color1);
-    font-weight: bold;
+    border: 1px solid var(--main-color1);
+    border-radius: 1%;
   }
 
 
@@ -242,7 +242,8 @@ button:hover {
 
 @media (max-width: 750px) {
     .about-background {
-        width: 35vh;
+        width: 40vh;
     }
+
 
 }
