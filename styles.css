@@ -1,9 +1,13 @@
+/* Variables */
 :root {
     --main-color1: #222222;
     --main-color2:  #8bc5ff;
     --main-color3: white;
     --main-color4: white;
 }
+/* End of Variables */
+
+/* Resets */
   * {
     margin: 0;
     padding: 0;
@@ -14,6 +18,8 @@
     background: transparent;
     font-family: Montserrat;
 }
+/* End of Resets */
+
 body {
     background: linear-gradient(var(--main-color2) 25%, var(--main-color3));
     box-sizing: border-box;
