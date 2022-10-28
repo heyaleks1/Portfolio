@@ -18,7 +18,6 @@ body {
     background: linear-gradient(var(--main-color2) 25%, var(--main-color3));
     box-sizing: border-box;
 }
-
 header {
     width: 100%;
 	height: 90px;
@@ -156,7 +155,6 @@ h4 {
     border-radius: 3%;
     min-width: 250px;
 }
-
 .contact-sec {
     background: var(--main-color4);
     text-align: center;
@@ -190,8 +188,6 @@ button {
     border: 1px solid var(--main-color1);
     border-radius: 1%;
   }
-
-
 /* //////////////////////////////////////////////////////// */
 .l1:link {
     text-decoration: none;
@@ -239,11 +235,8 @@ button:hover {
         font-size: 75%;
     }
 }
-
 @media (max-width: 750px) {
     .about-background {
         width: 40vh;
     }
-
-
 }
