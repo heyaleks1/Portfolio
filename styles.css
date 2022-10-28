@@ -34,7 +34,20 @@ nav {
     float: right;
     min-width: 350px;
 }
+/*li {
+    padding: 12px;
+    font-size: 115%;
+    display: inline-flex;
+    margin: auto;
+    padding: 6px;  
+}*/
 
+.li {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
 h1 {
     text-align: center;
     width: 100%;
