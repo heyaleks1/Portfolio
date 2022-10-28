@@ -90,7 +90,7 @@ h4 {
 }
 .about-background {
     background: var(--main-color4);
-    width: 65vw;
+    width: 40vw;
     margin: auto; 
     border-radius: 1%; 
     box-shadow: 10px 10px 5px rgb(148, 148, 148, 0.5), 5px 5px 6px 15px rgb(148, 148, 148, 0.3);
@@ -151,7 +151,7 @@ h4 {
 .contact-sec {
     background: var(--main-color4);
     text-align: center;
-    width: 85vw;
+    width: 65vw;
     height: auto;
     max-width: 650px;
     margin: auto; 
@@ -229,3 +229,14 @@ button:hover {
       scroll-behavior: smooth;
     }
   }
+@media (max-width: 700px) {
+    .about-sec {
+        min-width: 90%;
+    }
+    .contact-sec {
+        min-width: 90%;
+    }
+    .about-background {
+        min-width: 90%;
+    }
+}
