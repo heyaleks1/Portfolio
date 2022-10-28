@@ -25,12 +25,9 @@ body {
     background: linear-gradient(var(--main-color2) 25%, var(--main-color3));
 }
 
-/*navbar background color*/
-header {
-	background-color: var(--main-color1);
-}
-nav {
-    padding: 10px 0 10px 0;
+/*navbar*/
+.navbar {
+    background-color: #222222;
 }
 
 h1 {
@@ -175,12 +172,7 @@ h4 {
 .form-1 {
     padding: 1em;
 }
-.temp {
-    color:red;
 
-    margin-top: 15px;
-
-}
 button {
     padding: 1em;
     width: 40%;
@@ -188,25 +180,8 @@ button {
     border-radius: 1%;
   }
 /* //////////////////////////////////////////////////////// */
-.l1:link {
-    text-decoration: none;
-    color: var(--main-color4);
-}
-.l1:visited {
-    text-decoration: none;
-    color: var(--main-color4);
-}
-.l1:active {
-    color: var(--main-color4);
-    text-decoration: none;
-}
-button:hover {
-    background-color: var(--main-color1);
-    color: var(--main-color2);
-    cursor: pointer;
-}
-.l1:hover {
-    color: var(--main-color2);
+a:hover {
+    color: grey;
     font-weight: bold;
     cursor: pointer;
 }
@@ -214,7 +189,11 @@ button:hover {
     background-color: var(--main-color1);
     color: var(--main-color2);
     cursor: pointer;
+    text-decoration: none;
 }
+ul.nav a:hover { background-color: #222222 !important; }
+
+/* removes underline when hovering over 'about me' button */
 .about-button:visited {
     text-decoration: none;
 }
