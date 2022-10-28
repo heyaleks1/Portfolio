@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--External links-->
     <link href="styles.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet"/>
     <title>Aleks Manevski Portfolio</title>
-    <link type="image/png" rel="icon" href="amlogo.png">
-    <script
-      src="https://kit.fontawesome.com/9c222d8499.js"
-      crossorigin="anonymous"
-    ></script>
+    <link type="image/png" rel="icon" href="amlogo.png" />
+
+    <!--Email submission form script-->
+    <script src="https://kit.fontawesome.com/9c222d8499.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
-      <header>
-        <nav id="nav-bar" class="text-right" >
-          <ul>
-            <li><a class="l1" href="#home"><i class="fa fa-home"></i> HOME</a></li>
-            <li><a class="l1" href="#about"><i class="fa fa-info-circle"></i> ABOUT</a></li>
-            <li><a class="l1" href="#contact"><i class="fa fa-address-book"></i> CONTACT</a></li>
-            <li><a class="l1" href='todo.html'><i class="fa fa-list-alt "></i> TO-DO LIST APP</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="main-section">
-        <div class="home-sec" id="home">
-          <div class="div-sec">
-            <h1 class="h1-style2">Hello There, I'm Aleks Manevski</h1>
-            <h4 class="home-desc">This is my Portfolio</h4>
-            <a class="about-button" href="#about"
-              ><label class="lab1">Learn about me...</label></a
-            >
+      <!--Nav bar background and nav bar containers-->
+        <header class="container-fluid">
+          <nav id="nav-bar">
+              <div class="row">
+                <div class="col-md-3">
+                    <a class="l1" href="#home"><i class="fa fa-home"></i> HOME</a>
+                </div>
+                <div class="col-md-3">
+                    <a class="l1" href="#about"><i class="fa fa-info-circle"></i> ABOUT</a>
+                </div>
+                <div class="col-md-3">
+                    <a class="l1" href="#contact"><i class="fa fa-address-book"></i> CONTACT</a>
+                </div>
+                <div class="col-md-3">
+                    <a class="l1" href="todo.html"><i class="fa fa-list-alt"></i> TO-DO LIST APP</a>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <!--Home page container, links to about section below-->
+        <div class="about-me">
+          <div id="home">
+            <div><h1 class="h1-style2">Hello There, I'm Aleks Manevski</h1></div>
+            <div><h4 class="home-desc">This is my Portfolio</h4></div>
+            <div><a class="about-button" href="#about"><label class="lab1">Learn about me...</label></a></div>  
           </div>
         </div>
+        
+        <!--Beginning of about me container-->
         <div class="about-background">
           <h1 class="h1-style2" id="about">ABOUT ME</h1>
-          <h4 class="other-links">
-            <a href="Aleks Manevski Resume 22.docx"
-              ><i class="fa-solid fa-file-arrow-down"></i
-            ></a>
-            My Resume
-          </h4>
-          <img src="https://i.imgur.com/T2vHoFf.png" class="img-1" />
+
+          <!--Uploading resume which can be downloaded by clicking on the download icon-->
+          <h4 class="other-links"><a href="Aleks Manevski Resume 22.docx"><i class="fa-solid fa-file-arrow-down"></i></a>My Resume</h4>
+          <img src="https://i.imgur.com/T2vHoFf.png" class="img-1"/>
           <p class="about-paragraph1">
-            Having previously completed 2 years of a Bachelor of Information at
-            the University of South Australia in Adelaide, Aleks has gained a
-            solid foundation of knowledge and has decided to persue independant
-            studies to specialize in his preffered languages.
-          </p>
+              Having previously completed 2 years of a Bachelor of Information
+              at the University of South Australia in Adelaide, Aleks has gained
+              a solid foundation of knowledge and has decided to persue
+              independant studies to specialize in his preffered languages.</p>
           <p class="about-paragraph2">
-            Additionally, Aleks has undertaken several IT and customer-service
-            based positions at Hewlett Packard Enterprise, iiNet and Datacom
-            which have further developed his IT and communication skills while
-            also providing exposure to in-house IT systems and procedures.
-          </p>
+              Additionally, Aleks has undertaken several IT and customer-service
+              based positions at Hewlett Packard Enterprise, iiNet and Datacom
+              which have further developed his IT and communication skills while
+              also providing exposure to in-house IT systems and procedures.</p>
         </div>
+
+        <!--Beginning of experience section with certificate containers-->
         <section class="home-sec2">
+
           <div class="experience">
             <div class="experience-title exp-text">FRONT-END DEVELOPMENT</div>
             <div class="exp-text">JavaScript</div>
@@ -72,69 +77,33 @@
             <div class="exp-text">ReactJS</div>
             <div class="exp-text">Boostrap</div>
           </div>
+
           <div class="experience">
             <div class="experience-title exp-text">BACK-END DEVELOPMENT</div>
             <div class="exp-text">NodeJS</div>
             <div class="exp-text">Express</div>
             <div class="exp-text">Azure Active Directory</div>
           </div>
+
           <div class="experience">
             <div class="experience-title exp-text">DATABASE INTEGRATION</div>
             <div class="exp-text">MonboDB</div>
             <div class="exp-text">VS Code</div>
           </div>
         </section>
+
         <section class="contact-sec">
           <div class="contact-container">
             <h1 id="contact">CONTACT</h1>
             <p class="p-bold">Please fill in the form below to contact me.</p>
           </div>
-          <form
-            method="post"
-            action="https://formsubmit.co/oceboosting@gmail.com"
-            id="form"
-            name="form"
-            type="submit"
-            class="form-1"
-          >
-            <input
-              name="name"
-              class="input-1"
-              type="text"
-              id="name"
-              placeholder="Name:"
-              required
-            />
-            <input
-              name="email"
-              class="input-1"
-              type="email"
-              id="email"
-              placeholder="Email:"
-              required
-            />
-            <textarea
-              name="message"
-              class="input-1"
-              rows="3"
-              cols="30"
-              type="text"
-              id="message"
-              placeholder="Message:"
-              required
-            ></textarea>
-            <button
-              name="submit-button"
-              type="submit"
-              id="submit"
-              value="submit"
-            >
-              Send Message
-            </button>
+          <form method="post" action="https://formsubmit.co/oceboosting@gmail.com" id="form" name="form" type="submit" class="form-1">
+            <input name="name" class="input-1" type="text" id="name" placeholder="Name:" required/>
+            <input name="email" class="input-1" type="email" id="email" placeholder="Email:" required/>
+            <textarea name="message" class="input-1" rows="3" cols="30" type="text" id="message" placeholder="Message:" required></textarea>
+            <button name="submit-button" type="submit" id="submit" value="submit">Send Message</button>
           </form>
         </section>
-        <section class="forums"></section>
-      </section>
     </main>
   </body>
 </html>
