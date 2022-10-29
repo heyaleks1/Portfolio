@@ -162,8 +162,9 @@ h4 {
     padding: 1.5em;
     margin: 1em;
     width: 60%;
-    border: 1px solid var(--main-color1);
+    border: 2px solid var(--main-color1);
     border-radius: 1%;
+    
 }
 .form-1 {
     padding: 1em;
@@ -174,7 +175,6 @@ h4 {
 .nav-link {
     text-decoration: none !important;    
 }
-
 
 /* //////////////////////////////////////////////////////// */
 a:hover {
@@ -212,5 +212,8 @@ a:hover {
     }
     .about-background {
         min-width: 90%;
+    }
+    .input-1 {
+        width: 80%;
     }
 }
