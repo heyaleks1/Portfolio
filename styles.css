@@ -22,14 +22,12 @@
 
 /*page background gradient colour*/
 body {
-    background: linear-gradient(var(--main-color2) 25%, var(--main-color3));
+    background: linear-gradient(var(--main-color3) 10%, var(--main-color2) 60%, var(--main-color3));
 }
-
 /*navbar*/
 .navbar {
     background-color: #222222;
-}
-
+} 
 h1 {
     text-align: center;
     width: 100%;
@@ -37,7 +35,6 @@ h1 {
     color: var(--main-color1);
     padding: 10px 0px 10px 0px;
 }
-
 h4 {
     text-align: center;
     width: 100%;
@@ -46,7 +43,6 @@ h4 {
     font-size: 115%;
     color: var(--main-color1);
 }
-
 .about-me {
     height: 100vh;
     display: flex;
@@ -172,18 +168,20 @@ h4 {
 .form-1 {
     padding: 1em;
 }
+.navbar-nav > li {
+    padding: 0 20px 0 20px;
+}
+.nav-link {
+    text-decoration: none !important;    
+}
 
-button {
-    padding: 1em;
-    width: 40%;
-    border: 1px solid var(--main-color1);
-    border-radius: 1%;
-  }
+
 /* //////////////////////////////////////////////////////// */
 a:hover {
-    color: grey;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+
 }
 .about-button:hover {
     background-color: var(--main-color1);
@@ -191,9 +189,6 @@ a:hover {
     cursor: pointer;
     text-decoration: none;
 }
-ul.nav a:hover { background-color: #222222 !important; }
-
-/* removes underline when hovering over 'about me' button */
 .about-button:visited {
     text-decoration: none;
 }
