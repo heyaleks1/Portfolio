@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-md fixed-top">
           <div class="container-fluid">
           <!-- Brand -->
-          <a class="navbar-brand"  style="color: #8bc5ff" href="#home">Aleks Manevski</a>
+          <a class="navbar-brand"  style="color: #8bc5ff" href="#top">Aleks Manevski</a>
         
           <!-- Toggler/collapsibe Button -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +38,9 @@
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active" style="color: #8bc5ff" href="#about"><i class="fa fa-info-circle"></i> ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #8bc5ff" href="#my-skills"><i class="fa fa-list-alt"></i> MY SKILLS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" style="color: #8bc5ff" href="#contact"><i class="fa fa-address-book"></i> CONTACT</a>
@@ -58,10 +61,13 @@
             <div><a class="about-button" href="#about"><label class="lab1">Learn about me...</label></a></div>  
           </div>
         </div>
-        
+        <div class="break" id="about"></div>
+        <div class="break2" id="about"></div>
+
         <!--Beginning of about me container-->
         <div class="about-background">
-          <h1 class="h1-style2" id="about">ABOUT ME</h1>
+          
+          <h1 class="h1-style2">About me</h1>
 
           <!--Uploading resume which can be downloaded by clicking on the download icon-->
           <h4 class="other-links"><a href="Aleks Manevski Resume 22.docx"><i class="fa-solid fa-file-arrow-down"></i></a> My Resume</h4>
@@ -78,41 +84,36 @@
               also providing exposure to in-house IT systems and procedures.</p>
         </div>
 
+        <div class="break" id="my-skills"></div>
+
         <!--Beginning of experience section with certificate containers-->
         <section class="home-sec2">
-
-          <div class="experience">
+            <div class="experience">
+            <h1 class="exp-text h1-style2 skill-pad">My Skills</h1>
             <div class="experience-title exp-text">FRONT-END DEVELOPMENT</div>
             <div class="exp-text">JavaScript</div>
             <div class="exp-text">HTML / CSS</div>
             <div class="exp-text">ReactJS</div>
             <div class="exp-text">Boostrap</div>
-          </div>
-
-          <div class="experience">
             <div class="experience-title exp-text">BACK-END DEVELOPMENT</div>
             <div class="exp-text">NodeJS</div>
             <div class="exp-text">Express</div>
             <div class="exp-text">Azure Active Directory</div>
-          </div>
-
-          <div class="experience">
             <div class="experience-title exp-text">DATABASE INTEGRATION</div>
             <div class="exp-text">MonboDB</div>
             <div class="exp-text">VS Code</div>
           </div>
         </section>
-
+        <div class="break"></div>
         <section class="contact-sec">
           <div class="contact-container">
-            <h1 id="contact">CONTACT</h1>
+            <h1 id="contact">Contact</h1>
             <p class="p-bold">Please fill in the form below to contact me.</p>
           
           <form method="post" action="https://formsubmit.co/oceboosting@gmail.com" id="form" name="form" type="submit" class="form-1">
             <input name="name" class="input-1" type="text" id="name" placeholder="Name:" required/>
             <input name="email" class="input-1" type="email" id="email" placeholder="Email:" required/>
             <textarea name="message" class="input-1" rows="3" cols="30" type="text" id="message" placeholder="Message:" required></textarea>
-            <div class="temp"></div>
             <button class="about-button" name="submit-button" type="submit" id="submit" value="submit">Send Message</button>
           </form>
         </div>

@@ -74,7 +74,7 @@ h4 {
     display: flex;
     justify-content: center;
     border: 2px solid var(--main-color1);
-    margin: auto;
+    margin: 10px auto;
     width: 30%;
     padding: 10px;
     border-radius: 4%;
@@ -148,7 +148,7 @@ h4 {
     width: 65vw;
     height: auto;
     max-width: 650px;
-    margin: auto; 
+    margin: auto auto 125px auto; 
     border-radius: 1%; 
     box-shadow: 10px 10px 5px rgb(148, 148, 148, 0.5), 5px 5px 6px 15px rgb(148, 148, 148, 0.3);
 }
@@ -172,6 +172,15 @@ h4 {
 }
 .navbar-nav > li {
     padding: 0 20px 0 20px;
+}
+.skill-pad {
+    padding-top: 10px;
+}
+.break {
+    height: 9vh;
+}
+.break2 {
+    height: 7vh;
 }
 
 /* //////////////////////////////////////////////////////// */
