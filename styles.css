@@ -177,11 +177,15 @@ h4 {
 .skill-pad {
     padding-top: 10px;
 }
-.break {
-    height: 9vh;
+.break1 {
+    height: 13vh;
 }
+
 .break2 {
-    height: 7vh;
+    height: 10vh;
+}
+.break3 {
+    height: 12vh;
 }
 
 /* //////////////////////////////////////////////////////// */
