@@ -83,7 +83,8 @@ h4 {
 }
 .about-background {
     background: var(--main-color4);
-    width: 40vw;
+    width: 35%;
+    min-width: 55%;
     margin: auto; 
     border-radius: 1%; 
     box-shadow: 10px 10px 5px rgb(148, 148, 148, 0.5), 5px 5px 6px 15px rgb(148, 148, 148, 0.3);
