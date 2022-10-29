@@ -134,6 +134,7 @@ h4 {
     background: var(--main-color1);
     padding: 5em;
     color: var(--main-color2);
+    margin: 1em auto;
 }
 .exp-text {
     padding-top: 0.7em;
@@ -174,15 +175,13 @@ h4 {
 .navbar-nav > li {
     padding: 0 20px 0 20px;
 }
-.skill-pad {
-    padding-top: 10px;
-}
-.break1 {
-    height: 18vh;
+
+ .break1 {
+    height: 14vh;
 }
 
 .break2 {
-    height: 10vh;
+    height: 3vh;
 }
 .break3 {
     height: 12vh;
