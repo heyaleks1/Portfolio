@@ -105,8 +105,8 @@
       </nav>
 
       <!--Home page container, links to about section below-->
-      <div class="about-me">
-        <div id="home">
+      <div class="container-fluid about-me" id="home">
+        <div>
           <div><h1 class="h1-style2">Hello There, I'm Aleks Manevski</h1></div>
           <div><h4 class="home-desc">This is my Portfolio</h4></div>
           <div>
@@ -117,32 +117,39 @@
         </div>
       </div>
 
-      <div class="break1" id="about"></div>
-
       <!--Beginning of about me container-->
-      <div class="about-background">
-        <h1 class="h1-style2">About me</h1>
+      <div class="container-fluid about-container" id="about">
+        <div class="about-background">
+          <h1 class="h1-style2">About me</h1>
 
-        <!--Uploading resume which can be downloaded by clicking on the download icon-->
-        <h4 class="other-links">
-          <a href="Aleks Manevski Resume 22.docx"
-            ><i class="fa-solid fa-file-arrow-down"></i
-          ></a>
-          My Resume
-        </h4>
-        <img src="https://i.imgur.com/T2vHoFf.png" class="img-1" />
-        <p class="about-paragraph1">
-          Having previously studied Information Technology at UniSA, I have gained a solid foundation of knowledge - while enhancing my problem solving, critical thinking, analytical and development skills. Following independant studies, I was able to specialize in a range of web/cloud technologies such as JavaScript, HTML, CSS, SQL/databases and M365 services.
-        </p>
-        <p class="about-paragraph2">
-          Additionally, I have undertaken several IT and customer-service based positions at companies such as Datacom, Hewlett Packard Enterprise and iiNet which have further developed my communication and teamwork skills while providing exposure to modern IT systems, procedures and standards.
-        </p>
+          <!--Uploading resume which can be downloaded by clicking on the download icon-->
+          <h4 class="other-links">
+            <a href="Aleks Manevski Resume 22.docx"
+              ><i class="fa-solid fa-file-arrow-down"></i
+            ></a>
+            My Resume
+          </h4>
+          <img src="https://i.imgur.com/T2vHoFf.png" class="img-1" />
+          <p class="about-paragraph1">
+            Having previously studied Information Technology at UniSA, I have
+            gained a solid foundation of knowledge - while enhancing my problem
+            solving, critical thinking, analytical and development skills.
+            Following independant studies, I was able to specialize in a range
+            of web/cloud technologies such as JavaScript, HTML, CSS,
+            SQL/databases and M365 services.
+          </p>
+          <p class="about-paragraph2">
+            Additionally, I have undertaken several IT and customer-service
+            based positions at companies such as Datacom, Hewlett Packard
+            Enterprise and iiNet which have further developed my communication
+            and teamwork skills while providing exposure to modern IT systems,
+            procedures and standards.
+          </p>
+        </div>
       </div>
 
-      <div class="break2" id="my-skills"></div>
-
       <!--Beginning of experience section with certificate containers-->
-      <section class="home-sec2">
+      <div class="container-fluid home-sec2" id="my-skills">
         <div class="experience">
           <h1 class="exp-text h1-style2 skill-pad">My Skills</h1>
           <div class="experience-title exp-text">FRONT-END DEVELOPMENT</div>
@@ -158,9 +165,8 @@
           <div class="exp-text">MonboDB</div>
           <div class="exp-text">VS Code</div>
         </div>
-      </section>
-      <div class="break3"></div>
-      <section class="contact-sec">
+      </div>
+      <div class="container-fluid contact-sec">
         <div class="contact-container">
           <h1 id="contact">Contact</h1>
           <p class="p-bold">Please fill in the form below to contact me.</p>
@@ -210,7 +216,7 @@
             </button>
           </form>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
