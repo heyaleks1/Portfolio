@@ -103,8 +103,8 @@
           </div>
         </div>
       </nav>
-
-      <!--Home page container, links to about section below-->
+      <div class="d-grid gap-3">
+        <!--Home page container, links to about section below-->
       <div class="container-fluid about-me min-vh-100" id="home">
         <div>
           <div><h1 class="h1-style2">Hello There, I'm Aleks Manevski</h1></div>
@@ -116,8 +116,9 @@
           </div>
         </div>
       </div>
-
-      <!--Beginning of about me container-->
+      </div>
+      <div class="d-grid gap-3">
+        <!--Beginning of about me container-->
       <div class="container-md about-container min-vh-100" id="about">
         <div class="about-background">
           <h1 class="h1-style2">About me</h1>
@@ -147,8 +148,9 @@
           </p>
         </div>
       </div>
-
-      <!--Beginning of experience section with certificate containers-->
+      </div>
+      <div class="d-grid gap-3">
+        <!--Beginning of experience section with certificate containers-->
       <div class="container-md experience-container min-vh-100" id="my-skills">
         <div class="experience-elements">
           <h1 class="exp-text h1-style2 skill-pad">My Skills</h1>
@@ -166,59 +168,58 @@
           <div class="exp-text">VS Code</div>
         </div>
       </div>
-
-
-
-
-      <form class="container contact-container min-vh-100" id="form" method="post" action="https://formsubmit.co/oceboosting@gmail.com" name="form" type="submit">
-        <div class="contact-elements row" id="contact">
-          <h1>Contact</h1>
-          <p class="p-bold">Please fill in the form below to contact me.</p>
-
-          <div class="col-xs-4">
-            <input
-              name="name"
-              class="container-inputs"
-              type="text"
-              id="name"
-              placeholder="Name:"
-              required
-            />
-          </div> 
-          
-          <div class="col-xs-4">
-            <input
-              name="email"
-              class="container-inputs"
-              type="email"
-              id="email"
-              placeholder="Email:"
-              required
-            />
-          </div>
-          <div class="col-xs-4">
-            <textarea
-              name="message"
-              class="container-inputs"
-              rows="3"
-              cols="30"
-              type="text"
-              id="message"
-              placeholder="Message:"
-              required
-            ></textarea>
-          </div>
-          <div class="col-xs-4">
-            <button
-              class="about-button"
-              name="submit-button"
-              type="submit"
-              id="submit"
-              value="submit"
-            >Send Message</button>
-          </div>
-        </div>    
-      </form>
+      </div>
+      <div class="d-grid gap-3">
+        <form class="container contact-container min-vh-100" id="form" method="post" action="https://formsubmit.co/oceboosting@gmail.com" name="form" type="submit">
+          <div class="contact-elements row" id="contact">
+            <h1>Contact</h1>
+            <p class="p-bold">Please fill in the form below to contact me.</p>
+  
+            <div class="col-xs-4">
+              <input
+                name="name"
+                class="container-inputs"
+                type="text"
+                id="name"
+                placeholder="Name:"
+                required
+              />
+            </div> 
+            
+            <div class="col-xs-4">
+              <input
+                name="email"
+                class="container-inputs"
+                type="email"
+                id="email"
+                placeholder="Email:"
+                required
+              />
+            </div>
+            <div class="col-xs-4">
+              <textarea
+                name="message"
+                class="container-inputs"
+                rows="3"
+                cols="30"
+                type="text"
+                id="message"
+                placeholder="Message:"
+                required
+              ></textarea>
+            </div>
+            <div class="col-xs-4">
+              <button
+                class="about-button"
+                name="submit-button"
+                type="submit"
+                id="submit"
+                value="submit"
+              >Send Message</button>
+            </div>
+          </div>    
+        </form>
+      </div>
     </main>
   </body>
 </html>

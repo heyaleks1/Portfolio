@@ -92,7 +92,6 @@ h4 {
   align-items: center;
   justify-content: center;
   max-width: 90%;
-  padding: 30px;
 }
 .other-links {
   color: var(--main-color1);
@@ -118,7 +117,6 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
 }
 /* child of container that holds the about section divs */
 .experience-elements {
@@ -144,8 +142,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  padding-bottom: 50px;
+ 
 }
 .contact-elements {
   background: var(--main-color4);
