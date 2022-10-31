@@ -204,4 +204,7 @@ a:hover {
   .ab1 {
     min-width: 50%;
   }
+  .contact-container, .experience-container, .about-container, .home-container {
+    padding-bottom: 30px;
+  }
 }
