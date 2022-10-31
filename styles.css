@@ -27,7 +27,9 @@ body {
     var(--main-color2) 60%,
     var(--main-color3)
   );
+  
 }
+
 /*navbar*/
 .navbar {
   background-color: #222222;
@@ -86,12 +88,12 @@ h4 {
   border-radius: 1%;
   box-shadow: 10px 10px 5px rgb(148, 148, 148, 0.5),
     5px 5px 6px 15px rgb(148, 148, 148, 0.3);
+    max-width: 65%;
 }
 .about-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 90%;
 }
 .other-links {
   color: var(--main-color1);
@@ -139,7 +141,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
  
 }
 .contact-elements {
@@ -155,7 +156,7 @@ h4 {
 .container-inputs {
   border: 2px solid var(--main-color1);
   margin: 1em;
-  padding: 0.5em;
+  padding: 1em;
   width: 65%;
 }
 
@@ -200,6 +201,9 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .ab1 {
     min-width: 50%;
+  }
+  .about-background {
+    max-width: 85%;
   }
   
 }
