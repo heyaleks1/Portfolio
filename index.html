@@ -103,122 +103,149 @@
           </div>
         </div>
       </nav>
-      <div class="d-grid gap-3">
-        <!--Home page container, links to about section below-->
-      <div class="container-fluid about-me min-vh-100" id="home">
-        <div>
-          <div><h1 class="h1-style2">Hello There, I'm Aleks Manevski</h1></div>
-          <div><h4 class="home-desc">This is my Portfolio</h4></div>
-          <div>
-            <a class="about-button ab1" href="#about"
-              ><label class="lab1">Learn about me...</label></a
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="d-grid gap-3">
+            <!--Home page container, links to about section below-->
+            <div class="container-fluid about-me min-vh-100" id="home">
+              <div>
+                <div>
+                  <h1 class="h1-style2">Hello There, I'm Aleks Manevski</h1>
+                </div>
+                <div><h4 class="home-desc">This is my Portfolio</h4></div>
+                <div>
+                  <a class="about-button ab1" href="#about"
+                    ><label class="lab1">Learn about me...</label></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-l-3">
+            <!--Beginning of about me container-->
+            <div class="container-md about-container min-vh-100" id="about">
+              <div class="about-background">
+                <h1 class="h1-style2">About me</h1>
+
+                <!--Uploading resume which can be downloaded by clicking on the download icon-->
+                <h4 class="other-links">
+                  <a href="Aleks Manevski Resume 22.docx"
+                    ><i class="fa-solid fa-file-arrow-down"></i
+                  ></a>
+                  My Resume
+                </h4>
+                <img src="https://i.imgur.com/T2vHoFf.png" class="img-1" />
+                <p class="about-paragraph1">
+                  Having previously studied Information Technology at UniSA, I
+                  have gained a solid foundation of knowledge - while enhancing
+                  my problem solving, critical thinking, analytical and
+                  development skills. Following independant studies, I was able
+                  to specialize in a range of web/cloud technologies such as
+                  JavaScript, HTML, CSS, SQL/databases and M365 services.
+                </p>
+                <p class="about-paragraph2">
+                  Additionally, I have undertaken several IT and
+                  customer-service based positions at companies such as Datacom,
+                  Hewlett Packard Enterprise and iiNet which have further
+                  developed my communication and teamwork skills while providing
+                  exposure to modern IT systems, procedures and standards.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-l-3">
+            <!--Beginning of experience section with certificate containers-->
+            <div
+              class="container-md experience-container min-vh-100"
+              id="my-skills"
             >
+              <div class="experience-elements">
+                <h1 class="exp-text h1-style2 skill-pad">My Skills</h1>
+                <div class="experience-titles exp-text">
+                  FRONT-END DEVELOPMENT
+                </div>
+                <div class="exp-text">JavaScript</div>
+                <div class="exp-text">HTML / CSS</div>
+                <div class="exp-text">ReactJS</div>
+                <div class="exp-text">Boostrap</div>
+                <div class="experience-titles exp-text">
+                  BACK-END DEVELOPMENT
+                </div>
+                <div class="exp-text">NodeJS</div>
+                <div class="exp-text">Express</div>
+                <div class="exp-text">Azure Active Directory</div>
+                <div class="experience-titles exp-text">
+                  DATABASE INTEGRATION
+                </div>
+                <div class="exp-text">MonboDB</div>
+                <div class="exp-text">VS Code</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-l-3">
+            <form
+              class="container contact-container min-vh-100"
+              id="form"
+              method="post"
+              action="https://formsubmit.co/oceboosting@gmail.com"
+              name="form"
+              type="submit"
+            >
+              <div class="contact-elements row" id="contact">
+                <h1>Contact</h1>
+                <p class="p-bold">
+                  Please fill in the form below to contact me.
+                </p>
+
+                <div class="col-xs-4">
+                  <input
+                    name="name"
+                    class="container-inputs"
+                    type="text"
+                    id="name"
+                    placeholder="Name:"
+                    required
+                  />
+                </div>
+
+                <div class="col-xs-4">
+                  <input
+                    name="email"
+                    class="container-inputs"
+                    type="email"
+                    id="email"
+                    placeholder="Email:"
+                    required
+                  />
+                </div>
+                <div class="col-xs-4">
+                  <textarea
+                    name="message"
+                    class="container-inputs"
+                    rows="3"
+                    cols="30"
+                    type="text"
+                    id="message"
+                    placeholder="Message:"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-xs-4">
+                  <button
+                    class="about-button"
+                    name="submit-button"
+                    type="submit"
+                    id="submit"
+                    value="submit"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
-      </div>
-      <div class="d-grid gap-3">
-        <!--Beginning of about me container-->
-      <div class="container-md about-container min-vh-100" id="about">
-        <div class="about-background">
-          <h1 class="h1-style2">About me</h1>
-
-          <!--Uploading resume which can be downloaded by clicking on the download icon-->
-          <h4 class="other-links">
-            <a href="Aleks Manevski Resume 22.docx"
-              ><i class="fa-solid fa-file-arrow-down"></i
-            ></a>
-            My Resume
-          </h4>
-          <img src="https://i.imgur.com/T2vHoFf.png" class="img-1" />
-          <p class="about-paragraph1">
-            Having previously studied Information Technology at UniSA, I have
-            gained a solid foundation of knowledge - while enhancing my problem
-            solving, critical thinking, analytical and development skills.
-            Following independant studies, I was able to specialize in a range
-            of web/cloud technologies such as JavaScript, HTML, CSS,
-            SQL/databases and M365 services.
-          </p>
-          <p class="about-paragraph2">
-            Additionally, I have undertaken several IT and customer-service
-            based positions at companies such as Datacom, Hewlett Packard
-            Enterprise and iiNet which have further developed my communication
-            and teamwork skills while providing exposure to modern IT systems,
-            procedures and standards.
-          </p>
-        </div>
-      </div>
-      </div>
-      <div class="d-grid gap-3">
-        <!--Beginning of experience section with certificate containers-->
-      <div class="container-md experience-container min-vh-100" id="my-skills">
-        <div class="experience-elements">
-          <h1 class="exp-text h1-style2 skill-pad">My Skills</h1>
-          <div class="experience-titles exp-text">FRONT-END DEVELOPMENT</div>
-          <div class="exp-text">JavaScript</div>
-          <div class="exp-text">HTML / CSS</div>
-          <div class="exp-text">ReactJS</div>
-          <div class="exp-text">Boostrap</div>
-          <div class="experience-titles exp-text">BACK-END DEVELOPMENT</div>
-          <div class="exp-text">NodeJS</div>
-          <div class="exp-text">Express</div>
-          <div class="exp-text">Azure Active Directory</div>
-          <div class="experience-titles exp-text">DATABASE INTEGRATION</div>
-          <div class="exp-text">MonboDB</div>
-          <div class="exp-text">VS Code</div>
-        </div>
-      </div>
-      </div>
-      <div class="d-grid gap-3">
-        <form class="container contact-container min-vh-100" id="form" method="post" action="https://formsubmit.co/oceboosting@gmail.com" name="form" type="submit">
-          <div class="contact-elements row" id="contact">
-            <h1>Contact</h1>
-            <p class="p-bold">Please fill in the form below to contact me.</p>
-  
-            <div class="col-xs-4">
-              <input
-                name="name"
-                class="container-inputs"
-                type="text"
-                id="name"
-                placeholder="Name:"
-                required
-              />
-            </div> 
-            
-            <div class="col-xs-4">
-              <input
-                name="email"
-                class="container-inputs"
-                type="email"
-                id="email"
-                placeholder="Email:"
-                required
-              />
-            </div>
-            <div class="col-xs-4">
-              <textarea
-                name="message"
-                class="container-inputs"
-                rows="3"
-                cols="30"
-                type="text"
-                id="message"
-                placeholder="Message:"
-                required
-              ></textarea>
-            </div>
-            <div class="col-xs-4">
-              <button
-                class="about-button"
-                name="submit-button"
-                type="submit"
-                id="submit"
-                value="submit"
-              >Send Message</button>
-            </div>
-          </div>    
-        </form>
       </div>
     </main>
   </body>
