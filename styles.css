@@ -196,6 +196,9 @@ a:hover {
   .about-container, .experience-container, .about-me, .contact-container {
     padding-bottom: 75px;
   }
+  .container-inputs {
+    min-width: 90%;
+  }
 }
 @media only screen and (max-width: 750px) {
 .img-1 {
