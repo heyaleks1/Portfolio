@@ -192,7 +192,9 @@ a:hover {
   }
   .about-background, .contact-elements, .container-inputs, .experience-container {
     max-width: 90%;
-    padding-bottom: 40px;
+  }
+  .about-container, .experience-container, .about-me, .contact-container {
+    padding-bottom: 75px;
   }
 }
 @media only screen and (max-width: 750px) {
