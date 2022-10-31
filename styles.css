@@ -188,19 +188,16 @@ a:hover {
     scroll-behavior: smooth;
   }
 }
-@media (max-width: 800px) {
+@media only screen and (max-width: 750px) {
   .contact-elements {
-    min-width: 90%;
-  }
-  .container-inputs {
-    min-width: 90%;
+    max-width: 85%;
   }
 }
 @media only screen and (max-width: 600px) {
   .ab1 {
     min-width: 50%;
   }
-  .about-background {
+  .about-background, .contact-elements, .container-inputs, .experience-container {
     max-width: 90%;
   }
 }
