@@ -192,10 +192,10 @@ a:hover {
 }
 @media (max-width: 800px) {
   .contact-elements {
-    min-width: 85%;
+    min-width: 90%;
   }
   .container-inputs {
-    min-width: 85%;
+    min-width: 90%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -203,7 +203,7 @@ a:hover {
     min-width: 50%;
   }
   .about-background {
-    max-width: 85%;
+    max-width: 90%;
   }
 }
 @media only screen and (max-width: 750px) {
