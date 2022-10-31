@@ -215,16 +215,5 @@ a:hover {
   }
 }
 @media (max-width: 700px) {
-  .about-sec {
-    min-width: 90%;
-  }
-  .contact-sec {
-    min-width: 90%;
-  }
-  .about-background {
-    min-width: 90%;
-  }
-  .input-1 {
-    width: 80%;
-  }
+  
 }
