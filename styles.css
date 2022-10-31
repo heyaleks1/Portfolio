@@ -73,11 +73,13 @@ h4 {
   justify-content: center;
   border: 2px solid var(--main-color1);
   margin: 10px auto;
-  width: 30%;
   padding: 10px;
   border-radius: 4%;
   font-weight: bold;
   color: var(--main-color1);
+}
+.ab1 {
+  width: 30%;
 }
 .about-background {
   background: var(--main-color4);
@@ -90,7 +92,6 @@ h4 {
   align-items: center;
   justify-content: center;
   max-width: 90%;
-
 }
 .other-links {
   color: var(--main-color1);
@@ -112,69 +113,53 @@ h4 {
   padding: 30px;
 }
 /* parent container for about section divs */
-.home-sec2 {
+.experience-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
 }
 /* child of container that holds the about section divs */
-.experience {
+.experience-elements {
   background: var(--main-color4);
   border-radius: 1%;
   box-shadow: 10px 10px 5px rgb(148, 148, 148, 0.5),
     5px 5px 6px 15px rgb(148, 148, 148, 0.3);
-  padding: 2em;
   text-align: center;
-  display: grid;
   justify-content: center;
-  margin: 1em auto;
+  padding: 1em;
 }
-.experience-title {
+.experience-titles {
   font-weight: bold;
-  color: var(--main-color1);
   background: var(--main-color1);
-  padding: 5em;
   color: var(--main-color2);
-  margin: 1em auto;
+  margin: auto 1em;
 }
 .exp-text {
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
+  padding: 1em;
   font-weight: bold;
-  border-radius: 3%;
-  min-width: 250px;
 }
-.contact-sec {
+.contact-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact-container {
+.contact-elements {
   background: var(--main-color4);
-  padding-top: 1em;
-  text-align: center;
-
-  max-width: 650px;
   border-radius: 1%;
   box-shadow: 10px 10px 5px rgb(148, 148, 148, 0.5),
     5px 5px 6px 15px rgb(148, 148, 148, 0.3);
-}
-.p-bold {
-  font-weight: bold;
-  margin: auto;
-}
-.input-1 {
-  /*contact section styling*/
-  padding: 1.5em;
-  margin: 1em;
-  width: 60%;
-  border: 2px solid var(--main-color1);
-  border-radius: 1%;
-}
-.form-1 {
+  text-align: center;
   padding: 1em;
+  max-width: 55%;
 }
+
+.container-inputs {
+  border: 2px solid var(--main-color1);
+  margin: 1em;
+  padding: 0.5em;
+  width: 65%;
+}
+
 .navbar-nav > li {
   padding: 0 20px 0 20px;
 }
@@ -205,6 +190,11 @@ a:hover {
     scroll-behavior: smooth;
   }
 }
-@media (max-width: 700px) {
-  
+@media (max-width: 800px) {
+  .contact-elements {
+    min-width: 85%;
+  }
+  .container-inputs {
+    min-width: 85%;
+  }
 }
