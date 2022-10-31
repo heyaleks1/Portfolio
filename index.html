@@ -108,15 +108,17 @@
         <div class="row g-3">
           <div id="home">
             <!--Home page container, links to about section below-->
-            <div class="container-fluid about-me min-vh-100">
-              <div class="home-container">
+            <div class="container-fluid home-container min-vh-100">
+              <div>
                 <div>
-                  <h1 class="h1-style2">Hello There, I'm Aleks Manevski</h1>
+                  <h1>Hello There, I'm Aleks Manevski</h1>
                 </div>
                 <div><h4 class="home-desc">This is my Portfolio</h4></div>
                 <div>
-                  <a class="about-button ab1" href="#about"
-                    ><label class="lab1">Learn about me...</label></a
+                  <a class="about-button" style="width: 30%" href="#about"
+                    ><label style="text-align: center"
+                      >Learn about me...</label
+                    ></a
                   >
                 </div>
               </div>
@@ -125,42 +127,40 @@
           <div>
             <!--Beginning of about me container-->
             <div class="container-md about-container min-vh-100" id="about">
-              <div class="about-background">
-                <div class="about-elements">
-                  <h1 class="h1-style2">About me</h1>
-
-                <!--Uploading resume which can be downloaded by clicking on the download icon-->
-                <h4 class="other-links">
-                  <a href="Aleks Manevski Resume 22.docx"
-                    ><i class="fa-solid fa-file-arrow-down"></i
-                  ></a>
-                  My Resume
-                </h4>
-                <img src="https://i.imgur.com/T2vHoFf.png" class="img-1" />
-                <p class="about-paragraph1">
-                  Having previously studied Information Technology at UniSA, I
-                  have gained a solid foundation of knowledge - while enhancing
-                  my problem solving, critical thinking, analytical and
-                  development skills. Following independant studies, I was able
-                  to specialize in a range of web/cloud technologies such as
-                  JavaScript, HTML, CSS, SQL/databases and M365 services.
-                </p>
-                <p class="about-paragraph2">
-                  Additionally, I have undertaken several IT and
-                  customer-service based positions at companies such as Datacom,
-                  Hewlett Packard Enterprise and iiNet which have further
-                  developed my communication and teamwork skills while providing
-                  exposure to modern IT systems, procedures and standards.
-                </p>
+              <div class="about-elements">
+                <div class="about-inputs">
+                  <h1>About me</h1>
+                  <!--Uploading resume which can be downloaded by clicking on the download icon-->
+                  <h4 style="color: var(--main-color1)">
+                    <a href="Aleks Manevski Resume 22.docx"
+                      ><i class="fa-solid fa-file-arrow-down"></i
+                    ></a>
+                    My Resume
+                  </h4>
+                  <img src="https://i.imgur.com/T2vHoFf.png" class="img-1" />
+                  <p class="about-paragraph1">
+                    Having previously studied Information Technology at UniSA, I
+                    have gained a solid foundation of knowledge - while
+                    enhancing my problem solving, critical thinking, analytical
+                    and development skills. Following independant studies, I was
+                    able to specialize in a range of web/cloud technologies such
+                    as JavaScript, HTML, CSS, SQL/databases and M365 services.
+                  </p>
+                  <p class="about-paragraph2">
+                    Additionally, I have undertaken several IT and
+                    customer-service based positions at companies such as
+                    Datacom, Hewlett Packard Enterprise and iiNet which have
+                    further developed my communication and teamwork skills while
+                    providing exposure to modern IT systems, procedures and
+                    standards.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div id="my-skills">
             <!--Beginning of experience section with certificate containers-->
-            <div
-              class="container-md experience-container min-vh-100"
-            >
+            <div class="container-md experience-container min-vh-100">
               <div class="experience-elements">
                 <h1 class="exp-text h1-style2 skill-pad">My Skills</h1>
                 <div class="experience-titles exp-text">
@@ -202,7 +202,7 @@
                 <div class="col-xs-4">
                   <input
                     name="name"
-                    class="container-inputs"
+                    class="contact-inputs"
                     type="text"
                     id="name"
                     placeholder="Name:"
@@ -213,7 +213,7 @@
                 <div class="col-xs-4">
                   <input
                     name="email"
-                    class="container-inputs"
+                    class="contact-inputs"
                     type="email"
                     id="email"
                     placeholder="Email:"
@@ -223,7 +223,7 @@
                 <div class="col-xs-4">
                   <textarea
                     name="message"
-                    class="container-inputs"
+                    class="contact-inputs"
                     rows="3"
                     cols="30"
                     type="text"

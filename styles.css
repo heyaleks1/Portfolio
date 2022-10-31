@@ -6,7 +6,6 @@
   --main-color4: white;
 }
 /* End of Variables */
-
 /* Resets */
 * {
   margin: 0;
@@ -19,18 +18,12 @@
   font-family: Montserrat;
 }
 /* End of Resets */
-
-/*page background gradient colour*/
 body {
   background: linear-gradient(
     var(--main-color3) 10%,
     var(--main-color2) 60%,
     var(--main-color3)
   );
-}
-/*navbar*/
-.navbar {
-  background-color: #222222;
 }
 h1 {
   text-align: center;
@@ -40,18 +33,16 @@ h1 {
 h4 {
   text-align: center;
   width: 100%;
-  
-  text-align: center;
   font-size: 115%;
   color: var(--main-color1);
 }
-.about-me {
+.navbar {
+  background-color: #222222;
+}
+.home-container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.lab1 {
-  text-align: center;
 }
 .home-name1 {
   min-width: 350px;
@@ -59,10 +50,7 @@ h4 {
 }
 .home-desc {
   color: var(--main-color1);
-}
-.home-desc {
- margin: 1em auto;
-
+  margin: 1em auto;
 }
 .about-button {
   display: flex;
@@ -74,24 +62,22 @@ h4 {
   font-weight: bold;
   color: var(--main-color1);
 }
-.ab1 {
-  width: 30%;
-}
-.about-background {
-  background: var(--main-color4);
-  border-radius: 1%;
-  box-shadow: 10px 10px 5px rgb(148, 148, 148, 0.5),
-    5px 5px 6px 15px rgb(148, 148, 148, 0.3);
-    max-width: 65%;
-    padding: 1em;
-}
 .about-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.other-links {
-  color: var(--main-color1);
+.about-elements {
+  background: var(--main-color4);
+  border-radius: 1%;
+  box-shadow: 10px 10px 5px rgb(148, 148, 148, 0.5),
+    5px 5px 6px 15px rgb(148, 148, 148, 0.3);
+  max-width: 65%;
+  padding: 1em;
+}
+.about-inputs {
+  text-align: center;
+  padding: 1em;
 }
 .img-1 {
   border-radius: 50%;
@@ -101,17 +87,11 @@ h4 {
   margin: 0 auto;
   padding: 15px;
 }
-.about-elements {
-  text-align: center;
-  padding: 1em;
-}
-/* parent container for about section divs */
 .experience-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* child of container that holds the about section divs */
 .experience-elements {
   background: var(--main-color4);
   border-radius: 1%;
@@ -121,14 +101,12 @@ h4 {
   justify-content: center;
   padding: 1em;
   margin: 1em;
-  
 }
 .experience-titles {
   font-weight: bold;
   background: var(--main-color1);
   color: var(--main-color2);
   margin: auto 1em;
-  
 }
 .exp-text {
   padding: 1em;
@@ -138,8 +116,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  
- 
 }
 .contact-elements {
   background: var(--main-color4);
@@ -150,9 +126,8 @@ h4 {
   justify-content: center;
   padding: 1em;
   max-width: 55%;
-
 }
-.container-inputs {
+.contact-inputs {
   border: 2px solid var(--main-color1);
   margin: 1em auto;
   padding: 10px;
@@ -160,9 +135,7 @@ h4 {
 }
 .contact-heading {
   padding: 10px 0;
-
 }
-
 .navbar-nav > li {
   padding: 0 20px 0 20px;
 }
@@ -201,19 +174,25 @@ a:hover {
   .ab1 {
     min-width: 50%;
   }
-  .about-background, .contact-elements, .container-inputs, .experience-container {
+  .about-elements,
+  .contact-elements,
+  .contact-inputs,
+  .experience-container {
     max-width: 90%;
   }
-  .about-container, .experience-container, .about-me, .contact-container {
+  .about-container,
+  .experience-container,
+  .home-container,
+  .contact-container {
     padding-bottom: 75px;
   }
-  .container-inputs {
+  .contact-inputs {
     min-width: 90%;
   }
 }
 @media only screen and (max-width: 750px) {
-.img-1 {
-  width: 20vh;
-  height: 20vh;
+  .img-1 {
+    width: 20vh;
+    height: 20vh;
   }
 }
