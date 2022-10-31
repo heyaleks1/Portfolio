@@ -100,8 +100,8 @@ h4 {
 }
 .img-1 {
   border-radius: 50%;
-  width: 30vh;
-  height: 30vh;
+  width: 24vh;
+  height: 24vh;
   display: block;
   margin: 0 auto;
   padding: 15px;
@@ -141,7 +141,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 30px;
  
 }
 .contact-elements {
@@ -206,5 +205,10 @@ a:hover {
   .about-background {
     max-width: 85%;
   }
-  
+}
+@media only screen and (max-width: 750px) {
+.img-1 {
+  width: 12vh;
+  height: 12vh;
+}
 }
