@@ -104,14 +104,11 @@ h4 {
   margin: 0 auto;
   padding: 15px;
 }
-.about-paragraph1 {
+.about-elements {
   text-align: center;
-  padding: 20px 30px 0 30px;
+  padding: 1em;
 }
-.about-paragraph2 {
-  text-align: center;
-  padding: 30px;
-}
+
 /* parent container for about section divs */
 .experience-container {
   display: flex;
@@ -204,7 +201,5 @@ a:hover {
   .ab1 {
     min-width: 50%;
   }
-  .contact-container, .experience-container, .about-container, .home-container {
-    padding-bottom: 30px;
-  }
+  
 }
