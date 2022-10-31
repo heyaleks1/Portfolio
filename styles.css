@@ -208,7 +208,7 @@ a:hover {
 }
 @media only screen and (max-width: 750px) {
 .img-1 {
-  width: 12vh;
-  height: 12vh;
+  width: 20vh;
+  height: 20vh;
 }
 }
